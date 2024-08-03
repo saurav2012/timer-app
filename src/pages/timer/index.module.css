@@ -1,0 +1,96 @@
+/* styles/Timer.module.css */
+
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.container p {
+  font-size: 2em;
+  margin: 20px 0;
+  color: #555;
+  font-family: 'Courier New', Courier, monospace; /* Monospace for time display */
+}
+
+.container button {
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  padding: 10px 20px; /* Increase padding for better touch interaction */
+  margin: 10px;
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  display: inline-block; /* Ensure proper alignment */
+}
+
+.container button:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.container button:active {
+  background-color: #004a9d; /* Darker shade on click */
+  transform: translateY(1px); /* Slightly push down effect */
+}
+
+.container button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  box-shadow: none; /* Remove shadow when disabled */
+  transform: none; /* Remove lift effect when disabled */
+}
+
+.alert {
+  position: fixed; /* Fixed position for the popup */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the popup is on top */
+}
+
+.alertContent {
+  background-color: #f7f3f3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  position: relative;
+  text-align: center;
+  max-width: 90%;
+  width: 200px; /* Fixed width for better alignment */
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  color: #d40101 !important;
+  margin-bottom: 50px;
+  justify-content: center;
+  text-align: center;
+}
+
+.text {
+  margin-top: 2.5rem;
+  color: #d40101;
+}
+
+.input {
+  padding: 10px;
+  font-size: 12px;
+  margin-left: 5px;
+}
